@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="top">
+        <div id="topfont">
+          <button onclick="reduceSize()">-</button>
+          <button>A</button>
+          <button onclick="increaseSize()">+</button>
+          <div id="Toplangauge">
+            <select>
+              <option>Select Language</option>
+              <option>Hindi</option>
+              <option>Marathi</option>
+            </select>
+          </div>
+        </div>
+        <div id="TopsignIn">
+          <a href="signin.html"><button>SignIn</button></a>
+        </div>
+      </div>
+      <div id="header">
+        <img src="../public/images/hdrsmbl.png" /> <img src="../public/images/headerMen.png" />
+        <div>
+          <h3>Babu Jagjivan Ram Chhatrawas Yojna(BJRCY)</h3>
+          <h4>Government of Maharashtra</h4>
+        </div>
+        <div id="hdrimg"><img src="../public/images/mainheaderrightimg.png" /></div>
+      </div>
+      <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Statistic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eliginility Criteria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Construction Norms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Application Guideline</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Application Flow</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="navbar">
+        <div>
+          <select>
+            <option>Statistic</option>
+          </select>
+        </div>
+        <div>
+          <select>
+            <option>Criteria</option>
+          </select>
+        </div>
+        <div>
+          <select>
+            <option>Construction Norms</option>
+          </select>
+        </div>
+        <div>
+          <select>
+            <option>Application Guidleness</option>
+          </select>
+        </div>
+        <div>
+          <select>
+            <option>Application Flow</option>
+          </select>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/slider_1.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slider_3.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slider_4.jpeg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div id="mainbody">
+        <div>
+          <h4>Notification</h4>
+          <div id="box-border">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Serial Number</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Dummy Public</td>
+                  <td>download</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    Declaration of Repair And<br />
+                    MAINTENANCE
+                  </td>
+                  <td>download</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    Declaration of New<br />
+                    Application
+                  </td>
+                  <td>download</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="gallery-div">
+          <h4>Gallery</h4>
+          <div id="img-item">
+            <div>
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+            </div>
+            <div>
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+              <img src="./images/gallery_1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <h3>About us:</h3>
+        <div id="aboutdata">
+          <p>
+            This scheme for construction of hostels is one of the means to enable and encourage
+            students belonging to Scheduled Castes (SC) to attain quality education. Such hostels
+            are immensely beneficial to the students hailing from rural and remote areas of the
+            country. While the scheme of construction of hostels for SC girls is in operation from
+            the Third Five Year Plan (1961-66), the same for boys was started with effect from the
+            year 1989-90. The primary objective of the revised scheme is to attract implementing
+            agencies for undertaking construction of hostels, especially for SC girls, towards the
+            broader vision of containment and reduction of their dropout rate. The other objectives
+            are:(i) having a girls/ boys hostel with a capacity of 100 seats, in every block
+            headquarters of low literacy districts not having one as of now, by way of priority,
+            (ii) repairing and proper maintenance of hostels, and (iii) having an effective
+            mechanism for monitoring, review, etc.
+          </p>
+          <img src="../public/images/girl-students-l.jpg" />
+        </div>
+      </div>
+      <!-- <div id="stories">
+        <img />
+      </div> -->
+      <div id="scheme">
+        <h3>Other scheme</h3>
+        <div id="scheme-item">
+          <div>
+            <a href="#"><h6>Education & Training</h6></a>
+            <a href="#"><h6>Employment</h6></a>
+            <a href="#"><h6>Disability Welfare</h6></a>
+            <a href="#"><h6>Social Remedies</h6></a>
+          </div>
+          <div>
+            <a href="#"><h6>Economic Unliftment</h6></a>
+            <a href="#"><h6>Special Assistance</h6></a>
+            <a href="#"><h6>Social Integration</h6></a>
+            <a href="#"><h6>Awards</h6></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="row">
+          <div class="col-3 p-3">
+            <h4>Social media</h4>
+            <div id="Linkscol1">
+              <a href="#"><span class="bi bi-facebook"></span></a>
+              <a href="#"><span class="bi bi-twitter"></span></a>
+              <a href="#"><span class="bi bi-instagram"></span></a>
+              <a href="#"><span class="bi bi-youtube"></span></a>
+            </div>
+            <h4 id="footer-item">Contact us</h4>
+            <span class="bi bi-telephone-fill"> 020 - 26127569</span><br />
+            <span class="bi bi-envelope-at"> fs.directorsw@gmail.com</span>
+          </div>
+          <div class="col-3 p-3">
+            <h4>Head Office</h4>
+            <p>
+              Babu Jagjivan Ram Chhatrawas<br />
+              Yojna, Government of Maharashtra<br />
+              Director.
+            </p>
+            <p>
+              Social Welfare Department<br />
+              Commissionerate, 3, Church Gate<br />
+              Road Pune - 411001
+            </p>
+          </div>
+          <div class="col-6 p-3">
+            <h4>Feedback Form</h4>
+            <div>
+              <div id="feedback">
+                <input type="text" placeholder="Enter Full Name" />
+                <input type="text" placeholder="Enter Email" />
+              </div>
+              <div id="feedback-form">
+                <input type="text" placeholder="Write Your Feedback" />
+                <button onclick="alert(`your feedback is submitted`)">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" style="text-align: center">Website Policy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
